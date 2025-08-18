@@ -1,0 +1,82 @@
+.banner {
+    background: var(--azul-Degrade);
+    padding: 2em;
+    color: var(--branco);
+    text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+.banner-titulo {
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+
+.banner-texto {
+    font: 16px;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.banner-pesquisa {
+    background-color: transparent;
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    border: 1px solid var(--branco);
+    border-radius: 24px;
+    outline: none;
+    padding: 1em;
+    width: 100%;
+
+
+}
+
+.banner-pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    color: var(--branco);
+    font-size: 14px;
+    text-align: center;
+    background: url(../img/Pesquisa.svg) no-repeat;
+    background-position: 1em;
+    
+
+
+}
+
+
+/*****************banner2/***************************/
+
+
+.banner2 {
+    background: var(--azul-Degrade);
+    padding: 2em;
+    color: var(--branco);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-titulo2{
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    margin: 1.2em;
+}
+
+.banner-botoes {
+  padding: .7em 1em;
+  margin: 0.5em 0.5em;
+  background: var(--laranja);
+  text-decoration: none;
+  font-family: var(--fonte-principal);
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--branco);
+  border-radius: 0px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  align-items: center;
+}
