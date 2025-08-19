@@ -1,0 +1,33 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #2D3033;
+    --branco: #c5c5c5;
+    --laranja: #1584EB;
+    --azul-degrade: linear-gradient(97.54deg, #152F40 35.49%, #295270 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+    --fonte-secundario: "Oooh Baby", cursive;"
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+    
+    --azul-novo: #1584EB;
+    --azul-novo2: #3F6C96;
+    --novobg: #313941;
+    --cinza2: #3F566B;
+
+
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
