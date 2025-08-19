@@ -87,6 +87,7 @@
 
     .swiper-pagination-bullet-active {
         background: var(--azul-novo);
+    }
 
     .swiper {
         width: 60%;
@@ -94,7 +95,7 @@
 
     .swiper-button-prev,
     .swiper-button-next {
-        display: none;
+        display: block;
         top: 60%;
     }
 

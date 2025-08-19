@@ -162,7 +162,7 @@
                             alt="Livro sobre liderança em design da alura books"></div>
                     <div class="swiper-slide"><img src="img/src/livro3.webp"
                             alt="Livro sobre javascript assertivo da alurabooks"></div>
-                    <div class="swiper-slide"><img src="iimg/src/livro4.webp" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="img/src/livro4.webp" alt="Livro Guia front end"></div>
                     <div class="swiper-slide"><img src="img/src/livro5.webp" alt="Livro sobre portugol"></div>
                     
                 </div>
@@ -260,23 +260,34 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-    const swiper = new Swiper('.swiper', {
-        spaceBetween: 10,
-        slidesPerView: 3,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-        },
-        breakpoints: {
-            1024: { // só a partir do desktop
-                effect: 'fade',
-                fadeEffect: {
-                    crossFade: true
+        const swiper = new Swiper('.swiper', {
+            // Configuração mobile-first: 1 slide para melhor visualização
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                // A partir de 600px, mostra 2 slides (como você sugeriu)
+                600: {
+                    slidesPerView: 2,
                 },
+                // A partir de 1024px, mantém a configuração original de desktop
+                1024: {
+                    effect: 'fade',
+                    fadeEffect: {
+                        crossFade: true
+                    },
+                }
             }
-        }
-    });
-</script>   
+        });
+    </script>
 </body>
 
 </html>
