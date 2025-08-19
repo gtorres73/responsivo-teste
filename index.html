@@ -265,6 +265,10 @@
             slidesPerView: 1,
             spaceBetween: 10,
             loop: true,
+            autoplay: {
+                delay: 3000, // 3 segundos
+                disableOnInteraction: false, // Continua o autoplay mesmo depois do usuário interagir
+            },
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
